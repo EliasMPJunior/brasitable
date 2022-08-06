@@ -1,5 +1,6 @@
 {
     "name": "eliasmpjunior/brasitable",
+    "description": "A simple way to show your data as a human readable table on CLI.",
     "authors": {
         "name": "eliasmpjunior",
         "email": "elias@brasidata.com.br",
