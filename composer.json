@@ -24,5 +24,11 @@
                 "Eliasmpjunior\\Brasitable\\Providers\\BrasitableServiceProvider"
             ]
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/EliasMPJunior/brasitable.git"
+        }
+    ]
 }
