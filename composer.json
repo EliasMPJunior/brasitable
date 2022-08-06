@@ -1,0 +1,24 @@
+{
+    "name": "eliasmpjunior/brasitable",
+    "authors": {
+        "name": "eliasmpjunior",
+        "email": "elias@brasidata.com.br",
+        "homepage": "https://brasidata.com.br"
+    },
+    "autoload": {
+        "psr-0": {
+            "Eliasmpjunior\\Brasitable": "src"
+        }
+    },
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "web64/laravel-cli-colors": "^0.20.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eliasmpjunior\\Brasitable\\Providers\\BrasitableServiceProvider"
+            ]
+        }
+    }
+}
