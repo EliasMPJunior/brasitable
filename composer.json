@@ -1,10 +1,12 @@
 {
     "name": "eliasmpjunior/brasitable",
-    "authors": {
-        "name": "eliasmpjunior",
-        "email": "elias@brasidata.com.br",
-        "homepage": "https://brasidata.com.br"
-    },
+    "authors": [
+        {
+            "name": "eliasmpjunior",
+            "email": "elias@brasidata.com.br",
+            "homepage": "https://brasidata.com.br"
+        },
+    ],
     "autoload": {
         "psr-0": {
             "Eliasmpjunior\\Brasitable": "src"
