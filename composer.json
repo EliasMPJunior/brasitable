@@ -5,7 +5,7 @@
             "name": "eliasmpjunior",
             "email": "elias@brasidata.com.br",
             "homepage": "https://brasidata.com.br"
-        },
+        }
     ],
     "autoload": {
         "psr-0": {
