@@ -1,11 +1,13 @@
 {
     "name": "eliasmpjunior/brasitable",
     "description": "A simple way to show your data as a human readable table on CLI.",
-    "authors": {
-        "name": "eliasmpjunior",
-        "email": "elias@brasidata.com.br",
-        "homepage": "https://brasidata.com.br"
-    },
+    "authors": [
+        {
+            "name": "eliasmpjunior",
+            "email": "elias@brasidata.com.br",
+            "homepage": "https://brasidata.com.br"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "Eliasmpjunior\\Brasitable": "src"
