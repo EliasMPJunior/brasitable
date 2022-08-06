@@ -8,6 +8,7 @@
             "homepage": "https://brasidata.com.br"
         }
     ],
+    "license": "MIT",
     "autoload": {
         "psr-0": {
             "Eliasmpjunior\\Brasitable": "src"
