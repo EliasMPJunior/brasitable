@@ -2,14 +2,8 @@
 
 namespace Eliasmpjunior\Brasitable\Exceptions;
 
-use Web64\Colors\Facades\Colors;
 
-use Eliasmpjunior\Brasitable\Contracts\BrasitableException;
-
-use RuntimeException;
-
-
-class TableHeaderEmptyException extends RuntimeException implements BrasitableException
+class TableHeaderEmptyException extends BrasitableException
 {
     /**
      * Create a new exception instance.
@@ -23,11 +17,6 @@ class TableHeaderEmptyException extends RuntimeException implements BrasitableEx
 
     public function printException()
     {
-        Colors::line('');
-
-        Colors::nobr()->error(' ERROR ');
-        Colors::deleted(' The table header can not be empty.');
-
-        Colors::line('');
+        $this->printMessage('The table header can not be empty.');
     }
 }

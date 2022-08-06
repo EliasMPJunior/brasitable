@@ -2,14 +2,8 @@
 
 namespace Eliasmpjunior\Brasitable\Exceptions;
 
-use Web64\Colors\Facades\Colors;
 
-use Eliasmpjunior\Brasitable\Contracts\BrasitableException;
-
-use RuntimeException;
-
-
-class TableContentColumnCountOverflowException extends RuntimeException implements BrasitableException
+class TableContentColumnCountOverflowException extends BrasitableException
 {
     protected $headerColumnCount = null;
     protected $columnCountOverFlow = null;
@@ -27,11 +21,6 @@ class TableContentColumnCountOverflowException extends RuntimeException implemen
 
     public function printException()
     {
-        Colors::line('');
-
-        Colors::nobr()->error(' ERROR ');
-        Colors::deleted(' The table line '.json_encode($this->columnCountOverFlow).' has '.count($this->columnCountOverFlow).' while '.$this->headerColumnCount.' is expected.');
-
-        Colors::line('');
+        $this->printMessage('The table line '.json_encode($this->columnCountOverFlow).' has '.count($this->columnCountOverFlow).' while '.$this->headerColumnCount.' is expected.');
     }
 }

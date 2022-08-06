@@ -53,6 +53,60 @@ class Brasitable
 		$this->checkTable();
 	}
 
+	public static function printInfo()
+	{
+        $tableHeader = array(
+                            array(
+                                'title' => 'Data',
+                                'color' => 'light_green',
+                            ),
+                            array(
+                                'title' => 'Value',
+                                'color' => 'light_green',
+                            ),
+                        );
+
+        $tableContent = array(
+                            array(
+	                            array(
+	                                'title' => 'Name',
+	                                'color' => 'light_yellow',
+	                            ),
+                                'eliasmpjunior/brasitable'
+                            ),
+                            array(
+	                            array(
+	                                'title' => 'Version',
+	                                'color' => 'light_yellow',
+	                            ),
+                                '0.2.0 β'
+                            ),
+                            array(
+	                            array(
+	                                'title' => 'Author',
+	                                'color' => 'light_yellow',
+	                            ),
+                                'eliasmpjunior'
+                            ),
+                            array(
+	                            array(
+	                                'title' => 'Email',
+	                                'color' => 'light_yellow',
+	                            ),
+                                'elias@brasidata.com.br'
+                            ),
+                            array(
+	                            array(
+	                                'title' => 'Homepage',
+	                                'color' => 'light_yellow',
+	                            ),
+                                'https://brasidata.com.br'
+                            ),
+                        );
+
+        self::printTable($tableHeader, $tableContent);
+    }
+
 	protected function checkTable()
 	{
 		$columnCount = count($this->tableHeader);

@@ -8,7 +8,7 @@ use Web64\Colors\Facades\Colors;
 use Illuminate\Support\Facades\Log;
 
 use Eliasmpjunior\Brasitable\Services\Brasitable;
-use Eliasmpjunior\Brasitable\Contracts\BrasitableException;
+use Eliasmpjunior\Brasitable\Exceptions\BrasitableException;
 
 
 class BrasitableInfoCommand extends Command
@@ -44,43 +44,9 @@ class BrasitableInfoCommand extends Command
      */
     public function handle()
     {
-        $tableHeader = array(
-                            array(
-                                'title' => 'Data',
-                                'color' => 'light_green',
-                            ),
-                            array(
-                                'title' => 'Value',
-                                'color' => 'light_yellow',
-                            ),
-                        );
-
-        $tableContent = array(
-                            array(
-                                'Name',
-                                'eliasmpjunior/brasitable'
-                            ),
-                            array(
-                                'Version',
-                                '0.1.0 β'
-                            ),
-                            array(
-                                'Author',
-                                'eliasmpjunior'
-                            ),
-                            array(
-                                'Email',
-                                'elias@brasidata.com.br'
-                            ),
-                            array(
-                                'Homepage',
-                                'https://brasidata.com.br'
-                            ),
-                        );
-
         try
         {
-            Brasitable::printTable($tableHeader, $tableContent);
+            Brasitable::printInfo();
         }
         catch (BrasitableException $e)
         {
